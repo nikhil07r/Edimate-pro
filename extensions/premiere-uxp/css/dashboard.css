@@ -1,6 +1,6 @@
-/* ============================================
-   EDITMATE PRO – Dashboard & Main Content
-   ============================================ */
+/* ==========================================================
+   EDITMATE PRO – Dashboard & Main Content (Studio Contrast)
+   ========================================================== */
 
 .main-content {
     flex: 1;
@@ -14,45 +14,29 @@
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: var(--space-lg);
+    padding: var(--space-xl);
 }
 
-/* Page Header */
-.page-header {
-    margin-bottom: var(--space-xl);
-}
-
-.page-title {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: var(--space-xs);
-}
-
-.page-subtitle {
-    font-size: var(--font-size-sm);
-    color: var(--text-secondary);
-}
-
-/* Dashboard Welcome */
+/* Dashboard Welcome Banner */
 .dashboard-welcome {
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    background: linear-gradient(135deg, #181B21 0%, #222630 100%);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     padding: var(--space-xl);
     margin-bottom: var(--space-xl);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-sm);
 }
 
 .dashboard-welcome::before {
     content: '';
     position: absolute;
     top: -50%;
-    right: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at 70% 30%, var(--accent-dim) 0%, transparent 60%);
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.12) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -62,9 +46,11 @@
 }
 
 .welcome-title {
-    font-size: var(--font-size-2xl);
-    font-weight: 700;
-    margin-bottom: var(--space-sm);
+    font-size: 20px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
 }
 
 .welcome-accent {
@@ -72,15 +58,16 @@
 }
 
 .welcome-description {
-    font-size: var(--font-size-md);
+    font-size: 13px;
     color: var(--text-secondary);
-    max-width: 400px;
+    line-height: 1.5;
+    max-width: 500px;
 }
 
 /* Quick Stats Row */
 .stats-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: var(--space-md);
     margin-bottom: var(--space-xl);
 }
@@ -88,45 +75,48 @@
 .stat-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    padding: 12px;
     text-align: center;
     transition: all var(--transition-fast);
 }
 
 .stat-card:hover {
-    border-color: var(--border-active);
-    box-shadow: var(--shadow-glow);
+    border-color: var(--border-hover);
+    background: var(--bg-card-hover);
 }
 
 .stat-value {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 800;
     color: var(--accent-primary);
-    margin-bottom: var(--space-xs);
+    margin-bottom: 4px;
 }
 
 .stat-label {
-    font-size: var(--font-size-xs);
-    color: var(--text-secondary);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-/* Tool Cards Grid */
+/* Tool Sections */
 .tools-section-title {
-    font-size: var(--font-size-md);
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
     color: var(--text-primary);
     margin-bottom: var(--space-md);
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
+    gap: 8px;
 }
 
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: var(--space-md);
     margin-bottom: var(--space-xl);
 }
@@ -134,61 +124,62 @@
 .tool-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-lg);
-    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    padding: 14px;
     cursor: pointer;
     transition: all var(--transition-fast);
     text-align: center;
     position: relative;
-    overflow: hidden;
+    user-select: none;
 }
 
 .tool-card:hover {
     background: var(--bg-card-hover);
-    border-color: var(--border-active);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-glow);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 .tool-card.coming-soon {
-    opacity: 0.5;
+    opacity: 0.45;
     cursor: default;
 }
 
 .tool-card.coming-soon:hover {
     transform: none;
     box-shadow: none;
+    border-color: var(--border-subtle);
 }
 
 .tool-card-icon {
-    font-size: 24px;
-    margin-bottom: var(--space-sm);
+    font-size: 26px;
+    margin-bottom: 8px;
     display: block;
 }
 
 .tool-card-name {
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--space-xs);
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 4px;
 }
 
 .tool-card-desc {
-    font-size: var(--font-size-xs);
-    color: var(--text-secondary);
+    font-size: 11px;
+    color: var(--text-muted);
     line-height: 1.4;
 }
 
 .coming-soon-badge {
     position: absolute;
-    top: var(--space-sm);
-    right: var(--space-sm);
+    top: 6px;
+    right: 6px;
     font-size: 8px;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
     color: var(--color-warning);
-    background: rgba(255, 179, 0, 0.15);
-    padding: 2px 6px;
-    border-radius: var(--radius-sm);
+    background: rgba(245, 158, 11, 0.15);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 2px 5px;
+    border-radius: 4px;
 }
