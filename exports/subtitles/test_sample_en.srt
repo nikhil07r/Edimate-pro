@@ -1,0 +1,7 @@
+1
+00:00:00,000 --> 00:00:03,420
+Welcome to EditMate Pro for Adobe Premiere Pro.
+
+2
+00:00:04,300 --> 00:00:08,680
+This is an offline AI transcription test using OpenAI Whisper.

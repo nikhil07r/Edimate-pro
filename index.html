@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITMATE PRO</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">EDITMATE <span class="logo-accent">PRO</span></span>
+                </div>
+                <button id="sidebar-toggle" class="sidebar-toggle" title="Toggle Sidebar">
+                    <span class="toggle-icon">☰</span>
+                </button>
+            </div>
+
+            <div class="sidebar-search">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search tools...">
+                </div>
+            </div>
+
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item active" data-page="home">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-label">Home</span>
+                </li>
+                <li class="nav-item" data-page="cutting">
+                    <span class="nav-icon">✂️</span>
+                    <span class="nav-label">Cutting</span>
+                </li>
+                <li class="nav-item" data-page="captions">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-label">Captions</span>
+                </li>
+                <li class="nav-item" data-page="broll">
+                    <span class="nav-icon">🎬</span>
+                    <span class="nav-label">B-Roll</span>
+                </li>
+                <li class="nav-item" data-page="audio">
+                    <span class="nav-icon">🔊</span>
+                    <span class="nav-label">Audio</span>
+                </li>
+                <li class="nav-item" data-page="motion">
+                    <span class="nav-icon">🎯</span>
+                    <span class="nav-label">Motion</span>
+                </li>
+                <li class="nav-item" data-page="multicam">
+                    <span class="nav-icon">📹</span>
+                    <span class="nav-label">Multicam</span>
+                </li>
+                <li class="nav-item" data-page="effects">
+                    <span class="nav-icon">✨</span>
+                    <span class="nav-label">Effects</span>
+                </li>
+                <li class="nav-item" data-page="macros">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-label">Macros</span>
+                </li>
+                <li class="nav-item" data-page="export">
+                    <span class="nav-icon">📤</span>
+                    <span class="nav-label">Export</span>
+                </li>
+                <li class="nav-item" data-page="media">
+                    <span class="nav-icon">📁</span>
+                    <span class="nav-label">Media Library</span>
+                </li>
+                <li class="nav-item" data-page="settings">
+                    <span class="nav-icon">⚙️</span>
+                    <span class="nav-label">Settings</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="version-info">v1.0.0</div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main id="main-content" class="main-content">
+            <div id="page-container" class="page-container">
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal Container -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div id="modal-content" class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <button id="modal-close" class="modal-close">✕</button>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+            <div id="modal-footer" class="modal-footer"></div>
+        </div>
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="js/core/logger.js"></script>
+    <script src="js/core/config.js"></script>
+    <script src="js/core/premiere-api.js"></script>
+    <script src="js/core/state.js"></script>
+    <script src="js/core/ui-utils.js"></script>
+    <script src="js/core/router.js"></script>
+
+    <!-- Page Modules -->
+    <script src="js/pages/home.js"></script>
+    <script src="js/pages/cutting.js"></script>
+    <script src="js/pages/captions.js"></script>
+    <script src="js/pages/broll.js"></script>
+    <script src="js/pages/audio.js"></script>
+    <script src="js/pages/motion.js"></script>
+    <script src="js/pages/multicam.js"></script>
+    <script src="js/pages/effects.js"></script>
+    <script src="js/pages/macros.js"></script>
+    <script src="js/pages/export.js"></script>
+    <script src="js/pages/media.js"></script>
+    <script src="js/pages/settings.js"></script>
+
+    <!-- App Init -->
+    <script src="js/app.js"></script>
+</body>
+</html>

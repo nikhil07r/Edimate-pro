@@ -1,0 +1,76 @@
+/* ============================================
+   EDITMATE PRO – Design System Variables
+   ============================================ */
+
+:root {
+    /* Brand Colors */
+    --bg-primary: #07111F;
+    --bg-secondary: #101E30;
+    --bg-tertiary: #162640;
+    --bg-card: #152238;
+    --bg-card-hover: #1A2D4A;
+    --bg-input: #0C1929;
+
+    --accent-primary: #00D9FF;
+    --accent-secondary: #75E8FF;
+    --accent-dim: rgba(0, 217, 255, 0.15);
+    --accent-glow: rgba(0, 217, 255, 0.3);
+
+    --text-primary: #F2F8FF;
+    --text-secondary: #8BA3C4;
+    --text-muted: #5A7394;
+    --text-accent: #00D9FF;
+
+    /* Status Colors */
+    --color-success: #00E676;
+    --color-warning: #FFB300;
+    --color-error: #FF5252;
+    --color-info: #448AFF;
+
+    /* Borders */
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-active: rgba(0, 217, 255, 0.3);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 20px rgba(0, 217, 255, 0.15);
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+
+    /* Typography */
+    --font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'Consolas', 'Courier New', monospace;
+    --font-size-xs: 10px;
+    --font-size-sm: 11px;
+    --font-size-base: 12px;
+    --font-size-md: 13px;
+    --font-size-lg: 15px;
+    --font-size-xl: 18px;
+    --font-size-2xl: 22px;
+
+    /* Borders & Radius */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-round: 50%;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 400ms ease;
+
+    /* Layout */
+    --sidebar-width: 200px;
+    --sidebar-collapsed: 52px;
+    --header-height: 48px;
+    --toolbar-height: 36px;
+}

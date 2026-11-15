@@ -1,0 +1,6 @@
+Icon files go here.
+Generate 24x24 and 48x48 PNG icons for the plugin.
+Required files:
+  - icon-dark.png (24x24)
+  - icon-light.png (24x24)
+  - plugin-icon.png (48x48)

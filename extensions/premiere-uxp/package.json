@@ -1,0 +1,13 @@
+{
+  "name": "editmate-pro",
+  "version": "1.0.0",
+  "description": "EDITMATE PRO – Professional editing assistant for Adobe Premiere Pro 2026",
+  "author": "EDITMATE PRO",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src/",
+    "build": "echo 'No build step required for UXP panel'"
+  },
+  "devDependencies": {}
+}

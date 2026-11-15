@@ -1,0 +1,26 @@
+# Python & Virtual Environments
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Whisper Models & Logs
+engines/whisper/models/*.pt
+engines/whisper/models/
+engines/whisper/venv/
+engines/whisper/logs/
+*.log
+
+# Dependencies & Build Outputs
+node_modules/
+dist/
+temp/
+*.ccx
+
+# OS & Environment
+.DS_Store
+Thumbs.db
+.env
+settings.local.json

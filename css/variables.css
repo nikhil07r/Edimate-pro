@@ -1,0 +1,82 @@
+/* ==========================================================
+   EDITMATE PRO – Professional Studio Dark Design System
+   High-Contrast, Clean, Production-Grade Palette
+   ========================================================== */
+
+:root {
+    /* Studio Surfaces */
+    --bg-primary: #0D0E11;        /* Main panel canvas */
+    --bg-secondary: #16181D;      /* Sidebar and structural containers */
+    --bg-tertiary: #1E2127;       /* Card surfaces */
+    --bg-card: #20242B;           /* Tool cards & sections */
+    --bg-card-hover: #292E38;     /* Card hover state */
+    --bg-input: #121417;          /* Form inputs & textareas */
+    --bg-badge: #232832;          /* Tag & pill badges */
+
+    /* Professional Studio Accents */
+    --accent-primary: #00E5FF;    /* Ultra-crisp Electric Cyan */
+    --accent-secondary: #38BDF8;  /* Sky Blue */
+    --accent-hover: #22D3EE;      /* Bright cyan hover */
+    --accent-dim: rgba(0, 229, 255, 0.14);
+    --accent-glow: rgba(0, 229, 255, 0.35);
+
+    /* Text System (High WCAG Contrast) */
+    --text-primary: #FFFFFF;      /* Pure crisp white */
+    --text-secondary: #CBD5E1;    /* Slate-100 readable secondary */
+    --text-muted: #94A3B8;        /* Slate-400 clearly legible descriptions */
+    --text-accent: #00E5FF;       /* Cyan highlight text */
+    --text-on-accent: #050608;    /* Dark text on bright buttons */
+
+    /* Semantic Status Colors */
+    --color-success: #10B981;     /* Emerald green */
+    --color-warning: #F59E0B;     /* Amber */
+    --color-error: #EF4444;       /* Coral Red */
+    --color-info: #3B82F6;        /* Royal Blue */
+
+    /* Visible High-Definition Borders */
+    --border-subtle: #2A2F3A;     /* Visible card & section borders */
+    --border-input: #3A4252;      /* Clear visible input border */
+    --border-hover: #4D576B;      /* Border on hover */
+    --border-active: #00E5FF;     /* Focused / active border */
+
+    /* Elevation & Depth */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.65);
+    --shadow-glow: 0 0 16px rgba(0, 229, 255, 0.22);
+
+    /* Layout Dimensions */
+    --sidebar-width: 215px;
+    --sidebar-collapsed: 54px;
+    --header-height: 52px;
+    --toolbar-height: 38px;
+
+    /* Spacing Scale */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 20px;
+    --space-2xl: 28px;
+
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Cascadia Code', Consolas, monospace;
+    --font-size-xs: 11px;
+    --font-size-sm: 12px;
+    --font-size-base: 13px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 19px;
+    --font-size-2xl: 23px;
+
+    /* Radii */
+    --radius-sm: 5px;
+    --radius-md: 7px;
+    --radius-lg: 10px;
+    --radius-xl: 14px;
+
+    /* Transitions */
+    --transition-fast: 120ms ease-out;
+    --transition-normal: 200ms ease-out;
+}
